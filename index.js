@@ -3,6 +3,7 @@ const nunjucks = require('nunjucks')
 
 const app = express()
 
+// Check the empty age
 const ageEmpty = (req, res, next) => {
   const age = req.query.age
   if (age) {
